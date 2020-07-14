@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
     tools:context=".SellFragment">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -37,6 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/purpose_text"
             android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
             android:paddingLeft="5dp"
             android:text="@string/our_team"
             android:textSize="30dp"
@@ -44,21 +45,83 @@
 
 
         <TextView
-            android:id="@+id/akshat_text"
+            android:id="@+id/shubh_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/team"
-            android:layout_marginTop="10dp"
-            android:text="@string/k"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/a"
             android:textSize="20dp" />
 
         <ImageView
-            android:id="@+id/akshat_image"
+            android:id="@+id/shubh_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/team"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@+id/shubh_text"
+            android:background="@drawable/shubh" />
+
+        <TextView
+            android:id="@+id/kishan_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/team"
+            android:layout_marginTop="130dp"
+            android:text="@string/b"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/kishan_image"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/team"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="127dp"
+            android:layout_marginEnd="0dp"
+            android:layout_toEndOf="@+id/kishan_text"
+            android:background="@drawable/kishan" />
+
+        <TextView
+            android:id="@+id/sanchit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/team"
+            android:layout_marginTop="250dp"
+            android:text="@string/c"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/sanchit_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/team"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="245dp"
+            android:layout_toEndOf="@+id/sanchit_text"
+            android:background="@drawable/sanchit" />
+
+        <TextView
+            android:id="@+id/sarthak_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/team"
+            android:layout_marginTop="370dp"
+            android:text="@string/d"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/sarthak_image"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_below="@+id/team"
             android:layout_marginStart="45dp"
-            android:layout_toEndOf="@+id/akshat_text"
-            android:background="@drawable/p2" />
+            android:layout_marginTop="365dp"
+            android:layout_toEndOf="@+id/sarthak_text"
+            android:background="@drawable/sarthak" />
     </RelativeLayout>
 </ScrollView>

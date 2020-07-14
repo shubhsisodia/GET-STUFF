@@ -35,7 +35,7 @@
             android:layout_centerVertical="true"
             android:orientation="vertical"
             android:paddingLeft="15dp"
-            android:paddingRight="15dp">
+            android:paddingRight="15dp">-
 
 
             <android.support.design.widget.TextInputLayout

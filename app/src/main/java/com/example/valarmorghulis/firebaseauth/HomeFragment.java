@@ -1,9 +1,11 @@
 package com.example.valarmorghulis.firebaseauth;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.GravityCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -50,7 +52,6 @@ public class HomeFragment extends Fragment {
         mProgressCircle = v.findViewById(R.id.progress_circle);
 
         mUploads = new ArrayList<>();
-
         mAdapter = new ImageAdapter(getActivity(), mUploads);
 
         mRecyclerView.setAdapter(mAdapter);
@@ -84,5 +85,29 @@ public class HomeFragment extends Fragment {
             }
         });
         return v;
+    }
+
+
+    boolean doubleBackToExitPressedOnce = false;
+
+    public void onBackPressed() {
+        //Checking for fragment count on backstack
+        if (getFragmentManager().getBackStackEntryCount() > 0) {
+            getFragmentManager().popBackStack();
+        } else if (!doubleBackToExitPressedOnce) {
+            this.doubleBackToExitPressedOnce = true;
+            Toast.makeText(getContext(),"Please click BACK again to exit.", Toast.LENGTH_SHORT).show();
+
+            new Handler().postDelayed(new Runnable() {
+
+                @Override
+                public void run() {
+                    doubleBackToExitPressedOnce = false;
+                }
+            }, 2000);
+        } else {
+
+            return;
+        }
     }
 }

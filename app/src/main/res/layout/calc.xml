@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="464dp"
+        android:layout_height="68dp"
+        android:background="#1D42AA"
+        android:text="COUNT"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="569dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="460dp"
+        android:layout_height="443dp"
+        android:background="#FCE22C"
+        android:gravity="center"
+        android:text="0"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#1D42AA"
+        android:textSize="150sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="136dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="461dp"
+        android:layout_height="59dp"
+        android:background="#1D42AA"
+        android:text="TOAST"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="86dp" />
+</android.support.constraint.ConstraintLayout>
