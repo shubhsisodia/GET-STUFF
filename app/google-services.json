@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "643197700067",
+    "firebase_url": "https://juggler-4465e.firebaseio.com",
+    "project_id": "juggler-4465e",
+    "storage_bucket": "juggler-4465e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:643197700067:android:17ce86b6f6118e2f4342d6",
+        "android_client_info": {
+          "package_name": "com.example.valarmorghulis.firebaseauth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "643197700067-5a910jfn24pkrgdc2d6gnpd78n0ol4i6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.valarmorghulis.firebaseauth",
+            "certificate_hash": "c68f21bf4305b0bec4c2e6de7cc205738b0fd9f2"
+          }
+        },
+        {
+          "client_id": "643197700067-gn2blmhp2i9a7ksg4kac5vk7lqsp09q0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2oQeTFYk40c4iP3EKdGK0NySkPhDOUAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "643197700067-gn2blmhp2i9a7ksg4kac5vk7lqsp09q0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
